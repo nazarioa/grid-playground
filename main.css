@@ -1,6 +1,7 @@
 body {
     font-family: sans-serif;
     font-size: 14px;
+    background-color: hsl(100, 100%, 77%);
 }
 
 .tiles {
@@ -72,7 +73,7 @@ of the tiles but keep the matrix the same size
 */
 @media only screen and (max-width: 1400px) {
     body {
-        background-color: green;
+        background-color: hsl(200, 100%, 77%);
     }
 
     .a {
@@ -118,7 +119,7 @@ but keeps the tile sizes
 */
 @media only screen and (max-width: 1000px) {
     body {
-        background-color: pink;
+        background-color: hsl(300, 100%, 77%);
     }
 
     .tiles {
@@ -177,7 +178,7 @@ and maintains the ratio
 */
 @media only screen and (max-width: 900px) {
     body {
-        background-color: paleturquoise;
+        background-color: hsl(400, 100%, 77%);
     }
 
     .tiles {
