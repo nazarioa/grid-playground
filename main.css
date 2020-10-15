@@ -220,4 +220,24 @@ and maintains the ratio
         padding: 5px;
         position: relative;
     }
+
+    .a {
+        order: 1;
+    }
+
+    .b {
+        order: 6;
+    }
+
+    .c {
+        order: 3;
+    }
+
+    .d {
+        order: 2;
+    }
+
+    .e {
+        order: 4;
+    }
 }
