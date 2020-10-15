@@ -4,6 +4,20 @@ body {
     background-color: hsl(100, 100%, 77%);
 }
 
+.title {
+    font-weight: bold;
+    font-size: larger;
+}
+
+.desc {
+    display: none;
+    margin-bottom: 1em;
+}
+
+.min-none.desc {
+    display: block;
+}
+
 .tiles {
     border: 1px solid rgb(150, 150, 150);
     grid-gap: 10px;
@@ -71,9 +85,13 @@ body {
 At this break point we only rearrange the order
 of the tiles but keep the matrix the same size
 */
-@media only screen and (max-width: 1400px) {
+@media only screen and (min-width: 1001px) and (max-width: 1400px) {
     body {
         background-color: hsl(200, 100%, 77%);
+    }
+
+    .min-1400.desc {
+        display: block;
     }
 
     .a {
@@ -117,9 +135,13 @@ of the tiles but keep the matrix the same size
 At this break point changes the size and layout of the matrix
 but keeps the tile sizes
 */
-@media only screen and (max-width: 1000px) {
+@media only screen and (min-width: 901px) and (max-width: 1000px) {
     body {
         background-color: hsl(300, 100%, 77%);
+    }
+
+    .min-1000.desc {
+        display: block;
     }
 
     .tiles {
@@ -180,6 +202,10 @@ and maintains the ratio
     body {
         background-color: hsl(400, 100%, 77%);
         font-size: 12px;
+    }
+
+    .min-900.desc {
+        display: block;
     }
 
     .tiles {
