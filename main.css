@@ -1,0 +1,192 @@
+/* Vanilla CSS */
+
+.tiles {
+    border: 1px solid rgb(150, 150, 150);
+    grid-gap: 10px;
+    background-color: #bebebe;
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    grid-template-rows: repeat(4, 1fr);
+    width: 600px;
+    height: 800px;
+    padding: 5px;
+    position: relative;
+}
+
+.tile {
+    border: 1px solid rgb(50, 50, 50);
+    background-color: rgba(255, 255, 255, 0.5);
+    padding: 5px;
+}
+
+.tile.wide {
+    background-color: rgba(255, 0, 0, 0.5);
+    grid-column: span 2;
+}
+
+.tile.tall {
+    background-color: rgba(0, 0, 255, 0.5);
+    grid-row: span 2;
+}
+
+
+.a {
+    order: 1;
+}
+
+.b {
+    order: 2;
+}
+
+.c {
+    order: 3;
+}
+
+.d {
+    order: 4;
+}
+
+.e {
+    order: 5;
+}
+
+.f {
+    order: 6;
+}
+
+.g {
+    order: 7;
+}
+
+.h {
+    order: 8;
+}
+
+
+/*
+At this break point we only rearrange the order
+of the tiles but keep the matrix the same size
+*/
+@media only screen and (max-width: 1400px) {
+    body {
+        background-color: green;
+    }
+
+    .a {
+        order: 1;
+    }
+
+    .b {
+        order: 4;
+    }
+
+    .c {
+        order: 2;
+    }
+
+    .d {
+        order: 3;
+    }
+
+    /*
+    .e {
+        order: 5;
+    }
+
+    .f {
+        order: 6;
+    }
+
+    .g {
+        order: 7;
+    }
+
+    .h {
+        order: 8;
+    }
+ */
+}
+
+
+
+/*
+At this break point changes the size and layout of the matrix
+but keeps the tile sizes
+*/
+@media only screen and (max-width: 1000px) {
+    body {
+        background-color: pink;
+    }
+
+    .tiles {
+        border: 1px solid rgb(150, 150, 150);
+        grid-gap: 10px;
+        background-color: #bebebe;
+        display: grid;
+        grid-template-columns: repeat(2, 1fr);
+        grid-template-rows: repeat(6, 1fr);
+        width: 400px;
+        height: 1200px;
+        padding: 5px;
+        position: relative;
+    }
+
+    .a {
+        order: 1;
+    }
+
+    .b {
+        order: 6;
+    }
+
+    .c {
+        order: 3;
+    }
+
+    .d {
+        order: 2;
+    }
+
+    .e {
+        order: 4;
+    }
+
+    /*
+    .f {
+        order: 6;
+    }
+
+    .g {
+        order: 7;
+    }
+
+    .h {
+        order: 8;
+    }
+ */
+}
+
+
+
+/*
+At this break keeps the layout of the matrix, but reduces the size
+and maintains the ratio
+*/
+@media only screen and (max-width: 900px) {
+    body {
+        background-color: paleturquoise;
+    }
+
+    .tiles {
+        border: 1px solid rgb(150, 150, 150);
+        grid-gap: 10px;
+        background-color: #bebebe;
+        display: grid;
+        grid-template-columns: repeat(2, 1fr);
+        grid-template-rows: repeat(6, 1fr);
+        width: 200px;
+        height: 600px;
+        padding: 5px;
+        position: relative;
+    }
+}
