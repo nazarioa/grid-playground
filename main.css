@@ -1,4 +1,7 @@
-/* Vanilla CSS */
+body {
+    font-family: sans-serif;
+    font-size: 14px;
+}
 
 .tiles {
     border: 1px solid rgb(150, 150, 150);
