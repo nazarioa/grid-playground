@@ -179,6 +179,7 @@ and maintains the ratio
 @media only screen and (max-width: 900px) {
     body {
         background-color: hsl(400, 100%, 77%);
+        font-size: 12px;
     }
 
     .tiles {
